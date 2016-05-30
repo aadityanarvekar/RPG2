@@ -17,6 +17,7 @@
 		08B9763F1CFB5AA200043746 /* Spartan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9763E1CFB5AA200043746 /* Spartan.swift */; };
 		08B976451CFCA92200043746 /* victory.wav in Resources */ = {isa = PBXBuildFile; fileRef = 08B976421CFCA92200043746 /* victory.wav */; };
 		08B976471CFCA9CC00043746 /* swing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 08B976461CFCA9CC00043746 /* swing.wav */; };
+		08B976491CFCF14B00043746 /* bgSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 08B976481CFCF14B00043746 /* bgSound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		08B9763E1CFB5AA200043746 /* Spartan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spartan.swift; sourceTree = "<group>"; };
 		08B976421CFCA92200043746 /* victory.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = victory.wav; sourceTree = "<group>"; };
 		08B976461CFCA9CC00043746 /* swing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swing.wav; sourceTree = "<group>"; };
+		08B976481CFCF14B00043746 /* bgSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bgSound.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 				08B976261CFB555000043746 /* Products */,
 				08B976461CFCA9CC00043746 /* swing.wav */,
 				08B976421CFCA92200043746 /* victory.wav */,
+				08B976481CFCF14B00043746 /* bgSound.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08B976471CFCA9CC00043746 /* swing.wav in Resources */,
+				08B976491CFCF14B00043746 /* bgSound.wav in Resources */,
 				08B976331CFB555100043746 /* LaunchScreen.storyboard in Resources */,
 				08B976301CFB555100043746 /* Assets.xcassets in Resources */,
 				08B9762E1CFB555100043746 /* Main.storyboard in Resources */,

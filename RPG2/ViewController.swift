@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     var victorySound: AVAudioPlayer!
     var attckSound: AVAudioPlayer!
+    var bgSound: AVAudioPlayer!
 
     @IBOutlet weak var plyr1AttackBtn: UIButton!
     @IBOutlet weak var plyr2AttackBtn: UIButton!
@@ -39,6 +40,16 @@ class ViewController: UIViewController {
     }
     
     func initializeGame() {
+        
+        let bgSoundPath = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("bgSound", ofType: "wav")!)
+        do {
+            try bgSound = AVAudioPlayer(contentsOfURL: bgSoundPath)
+        } catch let error as NSError {
+            print("\(error.description)")
+        }
+        bgSound.prepareToPlay()
+        bgSound.play()
+        bgSound.numberOfLoops = -1
         
         let victorySoundPath = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("victory", ofType: "wav")!)
         do {
@@ -101,6 +112,7 @@ class ViewController: UIViewController {
         NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.reArmPlayer), userInfo: nil, repeats: false)
         
         if !ogre.isAlive() || !spartan.isAlive() {
+            bgSound.stop()
             plyr1AttackBtn.enabled = false
             plyr2AttackBtn.enabled = false
             playr2HPLbl.hidden = true
