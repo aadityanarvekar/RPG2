@@ -12,6 +12,11 @@
 		08B9762E1CFB555100043746 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B9762C1CFB555100043746 /* Main.storyboard */; };
 		08B976301CFB555100043746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B9762F1CFB555100043746 /* Assets.xcassets */; };
 		08B976331CFB555100043746 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B976311CFB555100043746 /* LaunchScreen.storyboard */; };
+		08B9763B1CFB558600043746 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9763A1CFB558600043746 /* Character.swift */; };
+		08B9763D1CFB573800043746 /* Ogre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9763C1CFB573800043746 /* Ogre.swift */; };
+		08B9763F1CFB5AA200043746 /* Spartan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9763E1CFB5AA200043746 /* Spartan.swift */; };
+		08B976451CFCA92200043746 /* victory.wav in Resources */ = {isa = PBXBuildFile; fileRef = 08B976421CFCA92200043746 /* victory.wav */; };
+		08B976471CFCA9CC00043746 /* swing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 08B976461CFCA9CC00043746 /* swing.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		08B9762F1CFB555100043746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B976321CFB555100043746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08B976341CFB555100043746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08B9763A1CFB558600043746 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		08B9763C1CFB573800043746 /* Ogre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ogre.swift; sourceTree = "<group>"; };
+		08B9763E1CFB5AA200043746 /* Spartan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spartan.swift; sourceTree = "<group>"; };
+		08B976421CFCA92200043746 /* victory.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = victory.wav; sourceTree = "<group>"; };
+		08B976461CFCA9CC00043746 /* swing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swing.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,8 @@
 			children = (
 				08B976271CFB555100043746 /* RPG2 */,
 				08B976261CFB555000043746 /* Products */,
+				08B976461CFCA9CC00043746 /* swing.wav */,
+				08B976421CFCA92200043746 /* victory.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +72,9 @@
 				08B9762F1CFB555100043746 /* Assets.xcassets */,
 				08B976311CFB555100043746 /* LaunchScreen.storyboard */,
 				08B976341CFB555100043746 /* Info.plist */,
+				08B9763A1CFB558600043746 /* Character.swift */,
+				08B9763C1CFB573800043746 /* Ogre.swift */,
+				08B9763E1CFB5AA200043746 /* Spartan.swift */,
 			);
 			path = RPG2;
 			sourceTree = "<group>";
@@ -122,9 +137,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08B976471CFCA9CC00043746 /* swing.wav in Resources */,
 				08B976331CFB555100043746 /* LaunchScreen.storyboard in Resources */,
 				08B976301CFB555100043746 /* Assets.xcassets in Resources */,
 				08B9762E1CFB555100043746 /* Main.storyboard in Resources */,
+				08B976451CFCA92200043746 /* victory.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08B9763B1CFB558600043746 /* Character.swift in Sources */,
 				08B9762B1CFB555100043746 /* ViewController.swift in Sources */,
+				08B9763D1CFB573800043746 /* Ogre.swift in Sources */,
 				08B976291CFB555100043746 /* AppDelegate.swift in Sources */,
+				08B9763F1CFB5AA200043746 /* Spartan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +308,7 @@
 				08B976391CFB555100043746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
